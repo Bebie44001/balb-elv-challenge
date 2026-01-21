@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevator Visualizer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <h1>Elevator Visualizer</h1>
+        <p class="subtle">Level 8: visualize requests, riders, stops, and floors traversed.</p>
+      </header>
+
+      <section class="panel">
+        <div class="row">
+          <label>
+            Name
+            <input id="name" placeholder="e.g. Bebie" />
+          </label>
+          <label>
+            Current floor
+            <input id="currentFloor" type="number" min="0" value="0" />
+          </label>
+          <label>
+            Drop-off floor
+            <input id="dropOffFloor" type="number" min="0" value="5" />
+          </label>
+          <button id="addRequest">Add request</button>
+        </div>
+
+        <div class="row">
+          <button id="dispatchBaseline">Dispatch (baseline)</button>
+          <button id="dispatchEfficient">Dispatch (efficient)</button>
+          <button id="reset">Reset</button>
+        </div>
+
+        <div class="stats">
+          <div><span class="k">Current floor</span> <span id="statFloor" class="v">0</span></div>
+          <div><span class="k">Stops</span> <span id="statStops" class="v">0</span></div>
+          <div><span class="k">Floors traversed</span> <span id="statTraversed" class="v">0</span></div>
+          <div><span class="k">Requests</span> <span id="statRequests" class="v">0</span></div>
+          <div><span class="k">Riders</span> <span id="statRiders" class="v">0</span></div>
+        </div>
+      </section>
+
+      <section class="layout">
+        <div class="building">
+          <div class="buildingHeader">
+            <h2>Building</h2>
+            <div class="subtle">Floors 0–9</div>
+          </div>
+          <div id="building" class="floors"></div>
+        </div>
+
+        <div class="side">
+          <h2>Queue</h2>
+          <div class="subtle">Requests are people waiting to be picked up. Riders are currently inside.</div>
+          <div class="lists">
+            <div>
+              <h3>Requests</h3>
+              <ol id="requestsList" class="list"></ol>
+            </div>
+            <div>
+              <h3>Riders</h3>
+              <ol id="ridersList" class="list"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./ui.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,32 @@
+{
+    "name": "elevator-challenge",
+    "version": "1.0.0",
+    "description": "Make a JavaScript elevator",
+    "main": "index.js",
+    "type": "module",
+    "directories": {
+      "test": "tests"
+    },
+    "scripts": {
+      "test": "mocha tests/elevator_test.cjs",
+      "test:level9": "mocha tests/level9_api_test.mjs",
+      "test:all": "npm test && npm run test:level9",
+      "ui": "npx --yes http-server . -p 8080",
+      "api": "node server/index.js",
+      "api:dev": "nodemon server/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Bebie44001/balb-elv-challenge.git"
+    },
+    "license": "ISC",
+    "devDependencies": {
+      "babel-core": "^6.22.1",
+      "babel-preset-es2015": "^6.22.0",
+      "chai": "^3.5.0",
+      "express": "^4.19.2",
+      "mocha": "^9.1.1",
+      "nodemon": "^2.0.12"
+    }
+  }
+  
