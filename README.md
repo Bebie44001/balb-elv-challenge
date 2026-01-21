@@ -133,4 +133,4 @@ npm run ui
 
 Open `http://localhost:8080`.
 
-### Kindly refer to the IMPLEMENTATION_REPORT.md file for the detailed integration and updates. Thank you!!!
+### I’ve finished all levels from 0 to 9 and have attached the file sketch_level0.jpeg for the Level 0 challenge. You may refer to the IMPLEMENTATION_REPORT.md file for detailed integration and updates regarding Levels 1–9. Thank you, and have a nice day!
