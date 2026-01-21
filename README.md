@@ -132,3 +132,5 @@ npm run ui
 ```
 
 Open `http://localhost:8080`.
+
+### Kindly refer to the IMPLEMENTATION_REPORT.md file for the detailed integration and updates. Thank you!!!
